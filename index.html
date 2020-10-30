@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Trang chủ | Sống Foundation</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/4031497f84.js" crossorigin="anonymous"></script>
+	</head>
+	<style>
+		#hoverMenu:hover{
+			color: #80bfff;
+		}
+		
+
+		body{
+			padding: 0;
+		}
+		#banner1{
+			margin-top: 2%;
+			height: 100%;
+			width: 100%;
+		}
+		#banner1:hover{
+			opacity: 0.7;
+
+		}
+		#chuongtrinh{
+			margin-top: 100px;
+		}
+		.logo{
+			border:solid white; box-shadow: 1px 1px 1px 1px #888888; height: 200px; width: 200px;
+		}
+		.text-chuongtrinh{
+			width: 300px;
+		}
+		.nghesi-img{
+			border-radius: 50%;
+			height: 60px;
+			width: 100px;
+			align-self: center;
+		}
+		.nghesi-item{
+			width: 100%;
+		}
+		#banner-text{
+			position: absolute; top: 200px;left: 190px;
+			width: 500px;
+		}
+		.tintuc-img{
+			box-shadow: 2px 2px 2px 2px #888888;
+		}
+		.tintuc-img:hover{
+			opacity: 0.5;
+		}
+		@media screen and (min-width:768px) and (max-width: 992px){
+			.logo{
+				height: 300px; width: 300px;
+			}
+			#banner-text{
+				left: 10px;
+			}
+			.tintuc-item{
+				margin-top: 50px;
+			}
+		}
+		@media screen and (min-width:576px) and (max-width: 768px){
+			#banner-text{
+				left: 10px;
+			}
+			.tintuc-item{
+				margin-top: 50px;
+			}
+		}
+		@media screen and (max-width: 576px){
+			.logo{
+				height: 100px; width: 100px;
+			}
+			.text-chuongtrinh{
+				width: 150px;
+			}
+			#banner-text{
+				left: 0;
+			}
+			.tintuc-item{
+				margin-top: 50px;
+			}
+		}
+	</style>
+	<body id="body">
+		<div class=" " style="width: 100%;">
+			<!-- top -->
+			<div class="bg-dark" style="height: 35px; width: 100%;">
+				<div class="container d-flex flex-row justify-content-lg-start justify-content-md-start justify-content-sm-center justify-content-center small">
+					<a class="text-decoration-none m-2 text-white te"  href="TaiLieu.html">
+						Tài liệu
+					</a>
+					<a class="text-decoration-none m-2 text-white" href="TuyenDung.html">
+						Tuyển dụng
+					</a>
+					<a class="text-decoration-none m-2 text-white" href="TinhNguyen.html">
+						Tình nguyện viên
+					</a>
+				</div>
+			</div>	
+			<!-- menu chinh -->
+			<div class="container-lg d-flex  flex-row justify-content-between mt-4" >
+				<!-- logo-->
+				<div>
+					<a href="index.html"><img  style="width: 25%" src="./imgs/logo.png"/></a>
+				</div>
+				<!-- menu -->
+				<div class="d-lg-flex d-md-flex flex-lg-row flex-md-row d-sm-non d-none ">
+					<div class="dropdown">
+						<div onmouseover="drop1()" onmouseout="hidden1()" >
+						  	<a class="btn d-flex flex-row"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    	<h6 id="hoverMenu" class="text-muted" style="font-size: 12px;">VỀ QUỸ SỐNG</h6>
+						  	</a>
+					  		<div class="dropdown-menu mt-0" aria-labelledby="dropdownMenuLink">
+						    	<a class="dropdown-item" href="TamNhin&SuMenh.html" class="text-muted" style="font-size: 12px;">Tầm nhìn & Sứ mệnh</a>
+						    	<a class="dropdown-item" href="TrietLy.html" class="text-muted" style="font-size: 12px;">Triết lý</a>
+					  		</div>
+				  		</div>
+					</div>
+					<div class="dropdown ml-2">
+						<div onmouseover="drop2()" onmouseout="hidden1()" >
+						  	<a class="btn  d-flex flex-row" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+						    	<h6 id="hoverMenu" class="text-muted" style="font-size: 12px; ">CHƯƠNG TRÌNH NHÀ CHỐNG LŨ</h6>
+						  	</a>
+					  		<div class="dropdown-menu mt-0" aria-labelledby="dropdownMenuLink1">
+						    	<a class="dropdown-item border-0" href="#" class="text-muted" style="font-size: 12px;">Mô hình nhà an toàn</a>
+					  		</div>
+				  		</div>
+					</div>
+					<div class="ml-2" style="margin-top: 7px;">
+					  	<a href="#" class="text-decoration-none">
+					    	<h6 id="hoverMenu" class="text-muted" style="font-size: 12px; ">CHƯƠNG TRÌNH HẠNH PHÚC XANH</h6>
+					  	</a>
+					</div>
+					<div class="dropdown ml-2">
+						<div onmouseover="drop3()" onmouseout="hidden1()">
+						  	<a class="btn d-flex flex-row" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+						    	<h6 id="hoverMenu" class="text-muted" style="font-size: 12px; ">TIN TỨC & SỰ KIỆN</h6>
+						  	</a>
+					  		<div class="dropdown-menu mt-0" aria-labelledby="dropdownMenuLink2">
+						    	<a class="dropdown-item border-0" href="#" class="text-muted" style="font-size: 12px;">Tin tức</a>
+						    	<a class="dropdown-item border-0" href="#" class="text-muted" style="font-size: 12px;">Sự kiện</a>
+						    	<a class="dropdown-item border-0" href="#" class="text-muted" style="font-size: 12px;">Thông cáo báo chí</a>
+					  		</div>
+					  	</div>
+					</div>
+					<div class="ml-2" style="margin-top: 7px;">
+					  	<a href="#" class="text-decoration-none">
+					    	<h6 id="hoverMenu" class="text-muted" style="font-size: 12px; ">THÔNG TIN TÀI KHOẢN</h6>
+					  	</a>
+					</div>
+				</div>
+				<div class="d-xl-none d-md-none d-lg-none">
+					<i onclick="dropdownmenu();" type="button" class="fas fa-bars d-sm-block d-md-none d-xl-none d-lg-none"></i>
+				</div>
+			</div> 
+			<!-- menu responsive -->
+			<div id="toggle" class="p-4 d-md-none d-xl-none d-lg-none" style="display: flex; flex-direction:column; display: none;">
+				<div class="d-flex flex-column">
+					<div class="d-flex flex-row justify-content-between">
+						<a class="text-muted font-weight-light text-decoration-none" href="#">VỀ QUỸ SỐNG</a>
+	  					<button onclick="dropdown1()" class="btn btn-secondary dropdown-toggle" type="button">
+	  					</button>
+					</div>
+					<div id="dropdown1" class="ml-2" style="display: flex; flex-direction:column; display: none;">
+						    <a class=" text-muted text-decoration-none" href="TamNhin&SuMenh.html">Tầm nhìn & Sứ mệnh</a>
+						    <a class=" text-muted text-decoration-none" href="TrietLy.html">Triết lý</a>
+		 			</div>
+	 			</div>
+	 			<div class="d-flex flex-column mt-4">
+					<div class="d-flex flex-row justify-content-between">
+						<a class="text-muted font-weight-light text-decoration-none" href="#">CHƯƠNG TRÌNH NHÀ CHỐNG LŨ</a>
+	  					<button onclick="dropdown2()" class="btn btn-secondary dropdown-toggle" type="button">
+	  					</button>
+					</div>
+					<div id="dropdown2" class="ml-2" style="display: flex; flex-direction:column; display: none;">
+						    <a class=" text-muted text-decoration-none" href="#">Mô hình nhà an toàn</a>
+		 			</div>
+	 			</div>
+	 			<div class="d-flex flex-column mt-4">
+					<div class="d-flex flex-row justify-content-between">
+						<a class="text-muted font-weight-light text-decoration-none" href="#">TIN TỨC & SỰ KIỆN</a>
+	  					<button onclick="dropdown3()" class="btn btn-secondary dropdown-toggle h-50" type="button">
+	  					</button>
+					</div>
+					<div id="dropdown3" class="ml-2" style="display: flex; flex-direction:column; display: none;">
+						    <a class=" text-muted text-decoration-none" href="#">Tin tức</a>
+						    <a class=" text-muted text-decoration-none" href="#">Sự kiện</a>
+						    <a class=" text-muted text-decoration-none" href="#">Thông cáo báo chí</a>
+		 			</div>
+	 			</div>
+				<a class="text-muted font-weight-light mt-4 text-decoration-none" href="#">THÔNG TIN TÀI KHOẢN</a>
+			</div>
+		</div>
+		<!-- end top -->
+
+		<!-- main -->
+		<div style="height: 100%; width: 100%">
+			<!-- banner1 -->
+			
+			<div id="banner" class="d-flex align-items-sm-start justify-content-sm-center align-items-md-center align-items-xl-center align-items-lg-center" style="background-image: url('./imgs/banner.jpg'); background-size: 100%; background-size: cover; background-repeat: no-repeat; height: 700px;  margin-top: 20px; position: relative">
+				<div style="position: absolute; top: 0; background-color: #000000;height: 700px; width: 100%; opacity: 0.5">
+					
+				</div>
+				<div id="banner-text" class="container">
+					<div class="d-flex flex-column">
+						<h1 class="text-light font-weight-bold">Quỹ Hỗ trợ Phát triển Cộng đồng Sống bền vững</h1>
+						<p class="mt-4 text-light" >hoạt động phi lợi nhuận, hỗ trợ những hộ gia đình khó khăn tại các vùng chịu ảnh hưởng bởi thiên tai và biến đổi khí hậu xây dựng cuộc sống an toàn, ổn định và phát triển bền vững. Quỹ được thành lập bởi quyết định số 2470/QĐ-BNV, ngày 7/11/2018.</p>
+						<button  class="text-white mt-4 rounded border-0" style="background-color: #006666; height: 50px; width: 120px; font-size: 13px;"><a class="text-white text-decoration-none" href="#">GIỚI THIỆU</a></button>
+					</div>
+				</div>
+			</div>
+			<!-- end banner1 -->
+			<!--banner2 -->
+			<div class="d-flex justify-content-center mt-4">
+				<a href="#"><img id="banner1" src="./imgs/NhaAnToan.png"/></a>
+			</div>
+			<!-- end banner2 -->
+			<!-- chuong trinh -->
+			<div id="chuongtrinh" class="d-flex flex-column align-items-center">
+				<h3 class="mt-4">CHƯƠNG TRÌNH HÀNH ĐỘNG</h3>
+				<h6 class="text-muted mt-3">Hai chương trình hành động chính của Quỹ là "Nhà Chống Lũ" và "Hạnh Phúc Xanh"</h6>
+				<div class="d-flex flex-row mt-4 justify-content-center">
+					<div  class="d-flex flex-sm-column flex-column flex-md-column flex-xl-row flex-lg-row">
+						<a href="#"><img class="logo" src="./imgs/logoNhaChongLu.png"/></a>
+						<a class="text-decoration-none ml-4 mt-3 text-chuongtrinh" href="#">
+							<h6 class="text-dark">"NHÀ CHỐNG LŨ"</h6>
+							<h6 class="text-muted" style="font-size: 13px;">VÙNG DỰ ÁN: QUẢNG NAM, QUẢNG BÌNH, HÀ TĨNH, HẬU GIANG, SÓC TRĂNG, KHÁNH HÒA</h6>
+							<p class="font-weight-light text-muted">
+								Khởi xướng năm 2013, Nhà Chống Lũ là dự án phát triển cộng đồng với mục đích xây nhà an toàn và phát triển sinh kế bền vững cho người dân nghèo tại các vùng chịu ảnh hưởng bởi thiên tai và biến đổi khí hậu.
+							</p>
+						</a>
+					</div>
+					<div class="d-flex flex-sm-column flex-column flex-md-column flex-xl-row flex-lg-row ml-4">
+						<a href="#"><img class="logo" style="" src="./imgs/logoHanhPhucXanh.jpg"></a>
+						<a class="text-decoration-none ml-4 mt-3 text-chuongtrinh" href="#">
+							<h6 class="text-dark">"HẠNH PHÚC XANH"</h6>
+							<h6 class="text-muted" style="font-size: 13px;">VÙNG DỰ ÁN: HỒ CHÍ MINH, QUẢNG NAM - HỘI AN, SÓC TRĂNG</h6>
+							<p class="font-weight-light text-muted">
+								Khởi xướng năm 2013, Nhà Chống Lũ là dự án phát triển cộng đồng với mục đích xây nhà an toàn và phát triển sinh kế bền vững cho người dân nghèo tại các vùng chịu ảnh hưởng bởi thiên tai và biến đổi khí hậu.
+							</p>
+						</a>
+
+					</div>
+				</div>
+			</div>
+			<!-- end chuong trinh -->
+			<!-- nghe si dong hanh -->
+			<div style="margin-top: 50px;">
+				<div class="d-flex flex-column container">
+					<h3 class="align-self-center">CÁC NGHỆ SĨ ĐỒNG HÀNH</h3>
+					<div class="row mt-4">
+					  	<div class="col-lg-4 col-md-6 col-xl-4 col-sm-6 col-6 d-flex flex-column  nghesi-item">
+					  		<img class="nghesi-img" src="./imgs/MyLinh.jpg" />
+					  		<strong class="text-dark font-weight-bold align-self-center mt-4">Ca sĩ Mỹ Linh</strong>
+					  		<p class="text-muted" style="font-size: 14px; text-align: center;">
+					  			"đã là thành viên của dự án thì Ban tổ chức phân công công việc gì tôi cũng đều sẵn lòng làm cùng với mọi người, kể cả đi khuân thùng nhựa làm nhà phao cũng được, miễn làm thé nào có nhiều nhà cho bà con vùng lũ."
+					  		</p>
+					  	</div>
+					  	<div class="col-lg-4 col-md-6 col-xl-4 col-sm-6 col-6 d-flex flex-column  nghesi-item">
+					  		<img class="nghesi-img" src="./imgs/PhanAnh.jpg" />
+					  		<strong class="text-dark font-weight-bold align-self-center mt-4">MC Phan Anh & Yumi Dương</strong>
+					  		<p class="text-muted" style="font-size: 14px; text-align: center;">
+					  			"Mong bà con nhanh chóng hoàn thành nhà ở, sớm ổn định cuộc sống, giảm thiệt hại do lũ lụt gây ra."
+					  		</p>
+					  	</div>
+					  	<div class="col-lg-4 col-md-6 col-xl-4 col-sm-6 col-6 d-flex flex-column  nghesi-item">
+					  		<img class="nghesi-img" src="./imgs/LeKinhTai.jpg" />
+					  		<strong class="text-dark font-weight-bold align-self-center mt-4">Hoạ sĩ Lê Kinh Tài & Hoạ sĩ Lê Đình Nguyên</strong>
+					  		<p class="text-muted" style="font-size: 14px; text-align: center;">
+					  			"Bất cứ lúc nào Nhà Chống Lũ làm gây quỹ, cũng phải cho anh Tài góp tranh. Nhà Chống Lũ mà quên anh là anh sẽ giận đấy!"
+					  		</p>
+					  	</div>
+					  	<div class="col-lg-4 col-md-6 col-xl-4 col-sm-6 col-6 d-flex flex-column mt-4 nghesi-item">
+					  		<img class="nghesi-img" src="./imgs/VuCamNhung.jpg" />
+					  		<strong class="text-dark font-weight-bold align-self-center mt-4">Vũ Cẩm Nhung</strong>
+					  		<p class="text-muted" style="font-size: 14px; text-align: center;">
+					  			"Dự án dựng làng hạnh phúc ước nguyện được giúp những người dân vùng lũ, không chỉ vượt qua mùa mưa lũ mà còn có cuộc sống bình an, hạnh phúc với “làng hạnh phúc” Tôi nguyện chung sức cùng dự án để hiện thực hoá giấc mơ này"
+					  		</p>
+					  	</div>
+					  	<div class="col-lg-4 col-md-6 col-xl-4 col-sm-6 col-6 d-flex flex-column mt-4 nghesi-item">
+					  		<img class="nghesi-img" src="./imgs/DinhTienDat.jpg" />
+					  		<strong class="text-dark font-weight-bold align-self-center mt-4">Đinh Tiến Đạt</strong>
+					  		<p class="text-muted" style="font-size: 14px; text-align: center;">
+					  			"Nhà Chống Lũ vì luôn báo cáo rõ ràng, thông tin đầy đủ khúc triết nên tôi rất yên tâm và luôn ủng hộ."
+					  		</p>
+					  	</div>
+					  	<div class="col-lg-4 col-md-6 col-xl-4 col-sm-6 col-6 d-flex flex-column mt-4 nghesi-item">
+					  		<img class="nghesi-img" src="./imgs/TranNguyenKimNgan.jpg" />
+					  		<strong class="text-dark font-weight-bold align-self-center mt-4">Trần Nguyễn Kim Ngân</strong>
+					  		<p class="text-muted" style="font-size: 14px; text-align: center;">
+					  			"Từ âu lo, từ gian khó hóa ra niềm vui rất to, có tổ ấm và những khát khao chưa bao giờ."
+					  		</p>
+					  	</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- end nghe si dong hanh -->
+			<!-- tin tuc va su kien -->
+			<div class="d-flex flex-column align-items-center container" style="margin-top: 100px;">
+				<h3>Tin tức & sự kiện</h3>
+				<p class="text-muted">Tin tức | Sự kiện | Thông cáo Báo chí | Tài liệu | Báo cáo Tài trợ</p>
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-xl-4 col-lg-4 d-flex flex-column align-items-center align-items-sm-center align-items-md-center tintuc-item">
+						<a href="#">
+							<img class="img-fluid tintuc-img" src="./imgs/CTNha1.jpg"/>
+						</a>
+						<a class="text-decoration-none  mt-2" href="#">
+							<h6 class="font-weight-normal text-dark">CHƯƠNG TRÌNH "NHÀ CHỐNG LŨ"</h6> 
+						</a>
+						<a class="text-decoration-none font-weight-bold text-dark mt-2" href="#">
+							<p>
+								Nhà Chống Lũ công bố danh sách người đóng góp trong chiến dịch "Hướng về Miền Trung" qua Sao kê từ Ngân hàng VCB, Momo, và Paypal
+							</p>
+						</a>
+						<p class="font-weight-light">
+							Thưa các anh chị,Thay mặt Quỹ Sống, chương trình Nhà Chống Lũ; chúng tôi xin gửi lời cảm ơn sâu sắc đến các anh chị có tên và số điện thoại dưới đây, đã dành
+						</p>
+						<a href="#" class="text-decoration-none text-primary">Đọc tiếp...</a>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-xl-4 col-lg-4 d-flex flex-column align-items-center align-items-sm-center align-items-md-center tintuc-item">
+						<a class="text-decoration-none mt-2" href="#">
+							<h6 class="font-weight-normal">KÊU GỌI HỖ TRỢ</h6> 
+						</a>
+						<a class="text-decoration-none font-weight-bold text-dark mt-2" href="#">
+							<p>
+								Nhà Chống Lũ cần tìm: Họa sĩ thiết kế sách
+							</p>
+						</a>
+						<p class="font-weight-light">
+							Chương trình: Nhà Chống LũĐịa bàn: Tp. Hồ Chí MinhHạn nộp: 30/11/2020Số lượng: 01 CTV/TNV/Đối tác Dự án: Thiết kế & Dàn trang Sổ tay Kỹ thuật của Nhà Chống LũThời gian thực hiện dự án:
+						</p>
+						<a href="#" class="text-decoration-none text-primary">Đọc tiếp...</a>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-xl-4 col-lg-4 d-flex flex-column align-items-center align-items-sm-center align-items-md-center tintuc-item">
+						<a href="#">
+							<img  class="img-fluid tintuc-img"  src="./imgs/Mo.png"/>
+						</a>
+						<a class="text-decoration-none  mt-2" href="#">
+							<h6 class="font-weight-normal text-danger">MÔ HÌNH NHÀ AN TOÀN</h6> 
+						</a>
+						<a class="text-decoration-none font-weight-bold text-dark mt-2" href="#">
+							<p>
+								Bằng Khái niệm thiên tai và tóm tắt các mô hình Nhà An Toàn tương ứng
+							</p>
+						</a>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-xl-4 col-lg-4 d-flex flex-column align-items-center align-items-sm-center align-items-md-center tintuc-item">
+						<a href="#">
+							<img  class="img-fluid tintuc-img" src="./imgs/HuongVeMienTrung.png"/>
+						</a>
+						<a class="text-decoration-none  mt-2" href="#">
+							<h6 class="font-weight-normal text-dark">CHƯƠNG TRÌNH "NHÀ CHỐNG LŨ"</h6> 
+						</a>
+						<a class="text-decoration-none font-weight-bold text-dark mt-2" href="#">
+							<p>
+								"Hướng về Miền Trung" cùng Nhà Chống lũ
+							</p>
+						</a>
+						<p class="font-weight-light">
+							Năm nay do tác động của La Nina gây mưa bão bất thường, các tỉnh miền Trung nước ta đối mặt với nguy cơ cao của hiện tượng bão chồng bão, lũ chồng lũ. QUẢNG
+						</p>
+						<a href="#" class="text-decoration-none text-primary">Đọc tiếp...</a>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-xl-4 col-lg-4 d-flex flex-column align-items-center align-items-sm-center align-items-md-center tintuc-item">
+						<a href="#">
+							<img  class="img-fluid tintuc-img" src="./imgs/NhaPhaoBietLap.jpg"/>
+						</a>
+						<a class="text-decoration-none  mt-2" href="#">
+							<h6 class="font-weight-normal text-primary">CHƯƠNG TRÌNH "NHÀ CHỐNG LŨ"</h6> 
+						</a>
+						<a class="text-decoration-none font-weight-bold text-dark mt-2" href="#">
+							<p>
+								Bản thiết kế: Mô hình “Nhà Phao Biệt Lập” và “Nhà Phao gắn với nhà xây” cho các khu vực Tân Hoá, Quảng Bình và Hà Tĩnh
+							</p>
+						</a>
+						<p class="font-weight-light">
+							Mô hình PH01: “Nhà Phao Biệt Lập” Khu vực áp dụng: Mô hình áp dụng cho khu vực có mức lũ cao với biên độ dao động lớn từ 4-14m và ngâm lâu từ 3
+						</p>
+						<a href="#" class="text-decoration-none text-primary">Đọc tiếp...</a>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-xl-4 col-lg-4 d-flex flex-column align-items-center align-items-sm-center align-items-md-center tintuc-item">
+						<a href="#">
+							<img  class="img-fluid tintuc-img" src="./imgs/NhaGacXep.jpg"/>
+						</a>
+						<a class="text-decoration-none  mt-2" href="#">
+							<h6 class="font-weight-normal text-danger">CHƯƠNG TRÌNH "NHÀ CHỐNG LŨ"</h6> 
+						</a>
+						<a class="text-decoration-none font-weight-bold text-dark mt-2" href="#">
+							<p>
+								Bản thiết kế: Mô hình “Nhà Ba Gian có Gác Xép” và “Nhà Ống có Gác Xép” cho các khu vực lũ ngâm tại miền núi và trung du
+							</p>
+						</a>
+						<p class="font-weight-light">
+							Mô hình GA02A: “Nhà Ba Gian có Gác Xép” Khu vực áp dụng: Nhà ba gian có gác xếp được áp dụng cho người dân ở khu vực bão lớn, thường xuyên kèm gió giật,
+						</p>
+						<a href="#" class="text-decoration-none text-primary">Đọc tiếp...</a>
+					</div>
+				</div>
+			</div>
+			<!-- end tin tuc va su kien -->
+		</div>
+		<!-- end main -->
+		<!-- footer -->
+		<div class="d-flex" style="background-image: url('./imgs/footer.jpg'); background-size: cover; background-repeat: no-repeat; height: 450px; width: 100%; margin-top: 100px; position: relative;">
+			
+			<div style="position: absolute; top: 0; background-color: #000000;height: 450px; width: 100%; opacity: 0.5">
+					
+			</div>
+			<div class="container align-self-center text-light position-relative">
+				<h3 class="text-white font-weight-bold">THÔNG TIN LIÊN HỆ</h3>
+
+				<h6>Quỹ Hỗ Trợ Phát triển Cộng đồng sống bền vứng</h6>
+				<br/>
+				<strong>Địa chỉ: </strong> <sub>62 Vũ Tông Phan, An Phú, Q.2, TP.HCM (xem bản đồ)</sub>
+				<br/>
+				<strong>Giờ làm việc: </strong> <sub>Từ thứ 2 đến thứ 6, từ 9:00 đến 18:00</sub>
+				<br/>
+				<strong>Liên hệ hợp tác: </strong><a>gayquy@song.org.vn</a>
+				<br/>
+				<strong>Email: </strong><a>info@song.org.vn</a>
+				<br/>
+				<strong>Hotline: </strong> <sub> 09-14-19-1513</sub>
+			</div>
+		</div>
+		<!-- end footer -->
+		<script>
+			function drop1(){
+				document.getElementById("dropdownMenuLink").click();
+			}
+			function drop2(){
+				document.getElementById("dropdownMenuLink1").click();
+			}
+			function drop3(){
+				document.getElementById("dropdownMenuLink2").click();
+			}
+			function dropdown1(){
+				if(document.getElementById("dropdown1").style.display == 'none') document.getElementById("dropdown1").style.display = 'flex'
+				else document.getElementById("dropdown1").style.display = 'none';
+			}
+			function dropdown2(){
+				if(document.getElementById("dropdown2").style.display == 'none') document.getElementById("dropdown2").style.display = 'flex'
+				else document.getElementById("dropdown2").style.display = 'none';
+			}
+			function dropdown3(){
+				if(document.getElementById("dropdown3").style.display == 'none') document.getElementById("dropdown3").style.display = 'flex'
+				else document.getElementById("dropdown3").style.display = 'none';
+			}
+			function dropdownmenu(){
+				if(document.getElementById("toggle").style.display == 'none') document.getElementById("toggle").style.display = 'flex'
+				else document.getElementById("toggle").style.display = 'none';
+			}
+			function hidden1(){
+				document.getElementById("body").click();
+			}
+		</script>
+	</body>
+</html>
